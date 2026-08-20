@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico">
+
+  <title>Revival Mastery | Online Classes for All Subjects & Skills</title>
+<meta name="description" content="Revival Mastery provides expert online classes for school and college subjects, language classes, public speaking, exam preparation, and skill-based learning.">
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.2/css/intlTelInput.css"
+/>
+
+<style>
+  /* ======================
+   FIX intl-tel-input COUNTRY LIST
+   ====================== */
+
+.iti__country-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.iti__country {
+  list-style: none !important;
+  padding: 8px 10px !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iti__dial-code {
+  margin-left: auto;
+  color: #555;
+  font-weight: 600;
+}
+
+.iti__country-name {
+  font-weight: 500;
+}
+
+  /* ======================
+   STEP 9 — FOOTER STYLES
+   ====================== */
+
+.rm-footer {
+  background: linear-gradient(135deg, var(--rm-purple), var(--rm-pink));
+  color: #ffffff;
+  padding: 70px 16px 30px;
+}
+
+.rm-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.rm-footer h3,
+.rm-footer h4 {
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.rm-footer p,
+.rm-footer li {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.rm-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.rm-footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rm-footer-links li {
+  margin-bottom: 8px;
+}
+
+/* SOCIALS */
+.rm-footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.rm-footer-socials a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.25s ease;
+}
+
+.rm-footer-socials a:hover {
+  background: #ffffff;
+  color: var(--rm-purple);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+
+/* BOTTOM BAR */
+.rm-footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .rm-footer-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .rm-footer-socials {
+    justify-content: center;
+  }
+}
+
+  /* ======================
+   STEP 7 — GERMAN LEVELS
+   ====================== */
+
+.rm-levels {
+  background: #f8f8f8;
+  padding: 110px 16px;
+}
+
+.rm-levels-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rm-levels-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.rm-levels-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #3A3DB8;
+  margin-bottom: 12px;
+}
+
+.rm-levels-header p {
+  font-size: 16px;
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* GRID */
+.rm-levels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+.rm-level-card {
+  background: linear-gradient(135deg,#9D3CB0,#C93AC8);
+  color: #ffffff;
+  padding: 42px;
+  border-radius: 22px;
+}
+
+.rm-level-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.rm-level-card p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* FEATURED (B1) */
+.rm-highlight {
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+  .rm-levels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .rm-levels-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .rm-level-card {
+    padding: 54px; /* BIG & READABLE */
+  }
+
+  .rm-level-card h3 {
+    font-size: 24px;
+  }
+
+  .rm-level-card p {
+    font-size: 16px;
+  }
+}
+
+/* =================================================
+   GLOBAL
+   ================================================= */
+:root {
+  --rm-purple: #9D3CB0;
+  --rm-pink:   #C93AC8;
+  --rm-blue:   #3A3DB8;
+}
+
+
+
+* { box-sizing:border-box; }
+
+body {
+  margin:0;
+  font-family:'Nunito',sans-serif;
+  color:#222;
+  background:#fff;
+}
+
+/* =================================================
+   STEP 1 — NAVBAR
+   ================================================= */
+.rm-navbar {
+  background: linear-gradient(
+  135deg,
+  var(--rm-purple),
+  var(--rm-pink),
+  var(--rm-blue)
+);
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.rm-navbar-inner {
+  max-width:1200px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.rm-navbar img { height:40px; margin-right:12px; }
+.rm-navbar span { color:#fff; font-size:28px; font-weight:800; }
+
+/* =================================================
+   STEP 2 — HERO
+   ================================================= */
+.rm-hero {
+background: linear-gradient(
+  135deg,
+  var(--rm-purple),
+  var(--rm-pink),
+  var(--rm-blue)
+);
+  color:#fff;
+}
+
+.rm-hero-inner {
+  max-width:1200px;
+  margin:auto;
+  padding:100px 20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:40px;
+}
+
+/* HERO TAG — MATCH WEBSITE GRADIENT */
+.rm-hero-tag {
+  display: inline-block;
+  padding: 10px 22px;
+  background: linear-gradient(
+    135deg,
+    var(--rm-purple),
+    var(--rm-pink),
+    var(--rm-blue)
+  );
+  border-radius: 999px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+
+.rm-hero-title {
+  font-size:48px;
+  font-weight:800;
+  margin:0 0 20px;
+}
+
+.rm-hero-desc {
+  font-size:18px;
+  max-width:520px;
+  line-height:1.7;
+}
+
+.rm-hero-image img {
+  width:100%;
+  max-width:520px;
+  display:block;
+  margin-left:auto;
+}
+
+/* MOBILE HERO */
+@media(max-width:768px){
+  .rm-hero-inner {
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:70px 16px 60px;
+  }
+  .rm-hero-title { font-size:36px; }
+  .rm-hero-image img { margin:30px auto 0; }
+}
+
+/* =================================================
+   STEP 3 — VIDEO
+   ================================================= */
+.rm-video {
+  padding:90px 16px;
+}
+
+.rm-video-inner {
+  max-width:900px;
+  margin:auto;
+}
+
+.rm-video-frame {
+  position:relative;
+  padding-top:56.25%;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 16px 40px rgba(0,0,0,0.25);
+}
+
+.rm-video-frame iframe {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* =================================================
+   STEP 4 — BOOK DEMO
+   ================================================= */
+.rm-book {
+background: linear-gradient(
+  135deg,
+  var(--rm-purple),
+  var(--rm-pink),
+  var(--rm-blue)
+);
+  padding:100px 16px;
+  color:#fff;
+}
+
+.rm-book-inner {
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:60px;
+  align-items:center;
+}
+
+.rm-book h2 { font-size:44px; margin-bottom:16px; }
+
+.rm-form-card {
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,.35);
+  color:#222;
+}
+
+.rm-form-header {
+background: linear-gradient(
+  135deg,
+  var(--rm-purple),
+  var(--rm-pink),
+  var(--rm-blue)
+);
+  color:#fff;
+  padding:22px;
+  font-size:26px;
+  font-weight:700;
+  text-align:center;
+}
+
+.rm-form-body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CENTER everything */
+}
+
+
+.rm-form-body input,
+.rm-form-body select,
+.rm-form-body .iti,
+.rm-form-body .iti input {
+  width: 100%;
+  height: 52px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  align-self: stretch;
+
+}
+
+/* FIX phone text overlapping +91 */
+.rm-form-body .iti {
+  width: 100%;
+}
+
+.rm-form-body .iti input {
+  width: 100%;
+  height: 52px;
+  padding-left: 90px !important; /* IMPORTANT */
+  padding-right: 14px;
+  box-sizing: border-box;
+}
+
+.iti__flag-container {
+  left: 12px;
+}
+
+/* Fix intl-tel-input alignment */
+.iti {
+  display: block;
+}
+
+.iti__flag-container {
+  height: 52px;
+}
+
+
+
+.rm-form-body button {
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    var(--rm-purple),
+    var(--rm-pink),
+    var(--rm-blue)
+  ) !important;
+
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 800;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rm-form-body button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+
+/* MOBILE BOOK */
+@media(max-width:768px){
+  .rm-book-inner {
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .rm-book h2 { font-size:34px; }
+  /* FIX BOOK DEMO BUTTON — MOBILE */
+  .rm-form-body button {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 16px;
+    background: linear-gradient(
+      135deg,
+      var(--rm-purple),
+      var(--rm-pink),
+      var(--rm-blue)
+    );
+    color: #fff;
+  }
+}
+
+
+
+
+/* =================================================
+   STEP 6 — TEAM
+   ================================================= */
+/* ================================
+   STEP 6 — MEET OUR TEACHERS (FINAL)
+================================ */
+
+.rm-team {
+  background: linear-gradient(
+    135deg,
+    var(--rm-purple),
+    var(--rm-pink),
+    var(--rm-blue)
+  );
+  padding: 100px 16px;
+  color: #ffffff;
+}
+
+.rm-team-header h2 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.rm-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+.rm-team-card {
+  text-align: center;
+}
+
+/* IMAGE */
+.rm-team-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 4px solid rgba(255,255,255,0.3);
+}
+
+/* NAME + ROLE — GRADIENT TEXT */
+.rm-team-name,
+.rm-team-role {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #ffe6ff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rm-team-name {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.rm-team-role {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+  .rm-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .rm-team {
+    padding: 80px 16px;
+  }
+
+  .rm-team-header h2 {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+
+  .rm-team-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .rm-team-card img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+.rm-team-inner {
+  max-width:1200px;
+  margin:auto;
+}
+
+.rm-team h2 {
+  text-align:center;
+  font-size:36px;
+  color:var(--blue);
+  margin-bottom:60px;
+}
+
+.rm-team-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:40px;
+}
+
+.rm-team-card {
+  text-align:center;
+}
+
+.rm-team-card img {
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:50%;
+  margin-bottom:14px;
+}
+
+@media(max-width:991px){
+  .rm-team-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:767px){
+  .rm-team-grid { grid-template-columns:1fr; }
+  .rm-team-card img { width:220px;height:220px; }
+}
+
+/* =================================================
+   STEP 7 — LEVELS
+   ================================================= */
+.rm-levels {
+  background:#f8f8f8;
+  padding:110px 16px;
+}
+
+.rm-levels-inner {
+  max-width:1200px;
+  margin:auto;
+}
+
+.rm-levels-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+
+.rm-level-card {
+background: linear-gradient(
+  135deg,
+  var(--rm-purple),
+  var(--rm-pink),
+  var(--rm-blue)
+);
+  color:#fff;
+  padding:42px;
+  border-radius:22px;
+}
+
+@media(max-width:991px){
+  .rm-levels-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:767px){
+  .rm-levels-grid{grid-template-columns:1fr;}
+}
+
+/* =================================================
+   STEP 8 — FAQ
+   ================================================= */
+.rm-faq {
+  padding:60px 16px;
+}
+
+
+.rm-faq-inner {
+  max-width:900px;
+  margin:auto;
+}
+
+
+
+/* =================================================
+   STEP 9 — FOOTER
+   ================================================= */
+.rm-footer {
+background: linear-gradient(
+  135deg,
+  var(--rm-purple),
+  var(--rm-pink),
+  var(--rm-blue)
+);
+  color:#fff;
+  padding:60px 16px;
+}
+
+.rm-footer-inner {
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+}
+
+.rm-footer a { color:#fff; text-decoration:none; }
+
+@media(max-width:768px){
+  .rm-footer-inner{grid-template-columns:1fr;text-align:center;}
+}
+.iti__country-list,
+.iti__country-list li {
+  list-style: none !important;
+}
+.iti__country-list,
+.iti__country-list li {
+  list-style: none !important;
+}
+
+/* ================================
+   STEP 5 — TESTIMONIALS (FINAL FIXED)
+================================ */
+
+.testimonials-section {
+  background: linear-gradient(135deg, var(--rm-purple), var(--rm-pink));
+  padding: 36px 16px; /* SMALL – purple only on edges */
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 36px 32px; /* NORMAL desktop size */
+}
+
+.testimonials-heading {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  color: #2b1d59;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.testimonial-card {
+  text-align: center;
+}
+
+.testimonial-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.16);
+}
+
+.testimonial-rating {
+  margin-top: 12px;
+  font-weight: 700;
+  color: var(--rm-purple);
+}
+
+/* MOBILE ONLY — SWIPE (ONE CARD ONLY, NO PEEK) */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 22px 12px;
+  }
+
+  .testimonials-container {
+    padding: 26px 0;
+    border-radius: 22px;
+    overflow: hidden; /* IMPORTANT: hides next card */
+  }
+
+  .testimonials-heading {
+    font-size: 30px;
+    margin-bottom: 26px;
+    padding: 0 16px;
+  }
+
+  .testimonials-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0;
+  }
+
+  .testimonials-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-card {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    padding: 0 16px; /* internal spacing, not width */
+    box-sizing: border-box;
+  }
+}
+
+
+/* ================================
+   STEP 8 — FAQ (GRADIENT FINAL)
+================================ */
+
+.rm-faq details {
+  background: linear-gradient(
+    135deg,
+    var(--rm-purple),
+    var(--rm-pink),
+    var(--rm-blue)
+  );
+  border-radius: 22px;
+  padding: 28px 30px;
+  margin-bottom: 20px;
+  border: none;
+  color: #ffffff;
+}
+
+/* SUMMARY (QUESTION) */
+.rm-faq summary {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* ANSWER TEXT */
+.rm-faq p {
+  margin-top: 14px;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* ARROW / MARKER — ALL BROWSERS */
+.rm-faq summary::marker {
+  color: #ffffff;
+}
+
+.rm-faq summary::-webkit-details-marker {
+  color: #ffffff;
+}
+
+/* REMOVE BLUE OUTLINE */
+.rm-faq details:focus {
+  outline: none;
+}
+
+/* MOBILE TUNING */
+@media (max-width: 768px) {
+  .rm-faq details {
+    padding: 26px 22px;
+  }
+
+  .rm-faq summary {
+    font-size: 15px;
+  }
+}
+/* ======================
+   MOBILE — VIDEO EDGE TO EDGE
+   ====================== */
+@media (max-width: 768px) {
+
+  .rm-video {
+    padding: 0;
+  }
+
+  .rm-video-inner {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .rm-video-frame {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+}
+/* FIX MOBILE AUTO-ZOOM (FORM INPUTS) */
+@media (max-width: 768px) {
+  input,
+  select {
+    font-size: 16px !important;
+  }
+}
+/* ================================
+   REVIVAL MASTERY — PREMIUM POPUP
+================================ */
+
+.rm-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 8, 30, 0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.rm-popup {
+  background: #ffffff;
+  width: 92%;
+  max-width: 420px;
+  padding: 40px 34px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+  animation: rmPopIn 0.18s ease-out;
+}
+
+@keyframes rmPopIn {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.rm-popup-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--rm-purple),
+    var(--rm-pink),
+    var(--rm-blue)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.rm-popup h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: #2b1d59;
+}
+
+.rm-popup p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+/* DISABLE LONG-PRESS / SAVE IMAGE — MOBILE ONLY */
+@media (max-width: 768px) {
+  .rm-no-touch {
+    -webkit-touch-callout: none; /* iOS: no save/share */
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+  }
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<header class="rm-navbar">
+  <div class="rm-navbar-inner">
+    <img src="img/newlogo.png" alt="">
+    <span>Revival Mastery</span>
+  </div>
+</header>
+
+<section class="rm-hero">
+  <div class="rm-hero-inner">
+    <div>
+      <span class="rm-hero-tag">Expert Language Classes & Online Coaching for All Subjects
+
+</span>
+      <h1 class="rm-hero-title">Learn with Confidence.<br>Succeed in Every Subject.</h1>
+      <p class="rm-hero-desc">
+Personalised online classes for school students, college students, and professionals.
+We teach all academic subjects, public speaking, and language classes with expert faculty.      </p>
+    </div>
+    <div class="rm-hero-image">
+<img src="img/te.png" alt="" class="rm-no-touch">
+    </div>
+  </div>
+</section>
+
+<section class="rm-video">
+  <div class="rm-video-inner">
+    <div class="rm-video-frame">
+      <iframe src="https://www.youtube.com/embed/tGUm6J2xq9U" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="rm-book">
+  <div class="rm-book-inner">
+    <div>
+      <h2>Book A Free Demo</h2>
+      <p>Fill your details and our team will contact you.</p>
+    </div>
+    <div class="rm-form-card">
+      <div class="rm-form-header">Book Your Seat</div>
+      <form class="rm-form-body">
+        <input
+  type="text"
+  name="name"
+  placeholder="Name"
+  required
+>
+
+<input
+  type="email"
+  name="email"
+  placeholder="Email"
+  required
+>
+
+<input
+  type="tel"
+  id="rm-phone"
+  name="phone_display"
+  placeholder="Phone Number"
+  required
+>
+
+<input
+  type="hidden"
+  id="rm-phone-full"
+  name="phone"
+>
+        <select name="level" required>
+  <option value="">Select Your Level</option>
+  <option value="A1 - Basic">A1 – Basic</option>
+  <option value="A2 - Elementary">A2 – Elementary</option>
+  <option value="B1 - Intermediate">B1 – Intermediate</option>
+  <option value="B2 - Upper Intermediate">B2 – Upper Intermediate</option>
+  <option value="C1 - Advanced">C1 – Advanced</option>
+  <option value="C2 - Mastery">C2 – Mastery</option>
+  <option value="Not Sure">Not Sure (Help Me Choose)</option>
+</select>
+
+        <button>Book Demo</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="testimonials-container">
+
+    <h2 class="testimonials-heading" style="color:#9D3CB0;">
+      What Our Students Say
+    </h2>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <img src="img/ww1.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww3.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww4.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww5.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww6.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww7.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww8.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww9.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww10.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww11.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww12.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww13.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww14.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww15.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww16.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="img/ww17.jpg" class="testimonial-image">
+        <p class="testimonial-rating">⭐⭐⭐⭐⭐ Google Review</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================
+     STEP 6 — MEET OUR TEACHERS
+     ====================== -->
+<section class="rm-team">
+
+  <div class="rm-team-inner">
+
+    <div class="rm-team-header">
+      <h2>Learn from Certified German Trainers</h2>
+    </div>
+
+    <div class="rm-team-grid">
+
+      <!-- TEACHER 1 -->
+      <div class="rm-team-card">
+        <div class="rm-team-image">
+          <img src="img/online-german-language-trainer.png" alt="German Teacher">
+        </div>
+        <h4 class="rm-team-name">Lakshita Sachdeva</h4>
+        <p class="rm-team-role">German Language Trainer</p>
+      </div>
+
+      <!-- TEACHER 2 -->
+      <div class="rm-team-card">
+        <div class="rm-team-image">
+          <img src="img/online-german-classes-instructor.png" alt="German Teacher">
+        </div>
+        <h4 class="rm-team-name">Saumya Jain</h4>
+        <p class="rm-team-role">German Language Trainer</p>
+      </div>
+
+      <!-- TEACHER 3 -->
+      <div class="rm-team-card">
+        <div class="rm-team-image">
+          <img src="img/certified-german-language-teacher.png" alt="German Teacher">
+        </div>
+        <h4 class="rm-team-name">Tanisha Kohli</h4>
+        <p class="rm-team-role">German Language Trainer</p>
+      </div>
+
+      <!-- TEACHER 4 -->
+      <div class="rm-team-card">
+        <div class="rm-team-image">
+          <img src="img/german-speaking-coach-india.png" alt="German Teacher">
+        </div>
+        <h4 class="rm-team-name">Stephanie Harder</h4>
+        <p class="rm-team-role">German Language Trainer</p>
+      </div>
+
+      <!-- TEACHER 5 -->
+      <div class="rm-team-card">
+        <div class="rm-team-image">
+          <img src="img/goethe-german-exam-trainer.png" alt="German Teacher">
+        </div>
+        <h4 class="rm-team-name">Jeena Maria</h4>
+        <p class="rm-team-role">German Language Trainer</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  
+<!-- ======================
+     STEP 7 — GERMAN LEVELS
+     ====================== -->
+<section class="rm-levels">
+
+  <div class="rm-levels-inner">
+
+    <div class="rm-levels-header">
+      <h2>Our Courses & Learning Programs
+</h2>
+    </div>
+
+    <div class="rm-levels-grid">
+
+      <a href="https://www.revivalmastery.com/revivalmasterygerman.html" style="text-decoration:none;">
+  <div class="rm-level-card">
+    <h3>Language Classes</h3>
+    <p>
+      English and foreign language training focused on speaking, grammar, pronunciation, and real-life communication.
+    </p>
+  </div>
+</a>
+
+
+      <div class="rm-level-card">
+        <h3>Public Speaking</h3>
+        <p>
+        Confidence building, stage presence, presentation skills, and effective communication for students and professionals.
+        </p>
+      </div>
+
+      <div class="rm-level-card">
+        <h3>School Subjects</h3>
+        <p>
+        Online coaching for Maths, Science, English, and all core subjects for school students across all boards.
+        </p>
+      </div>
+
+      <div class="rm-level-card">
+        <h3>College Subjects</h3>
+        Concept-based learning for Arts, Commerce, Science, Management, and technical subjects.
+        <p>
+        </p>
+      </div>
+
+      <div class="rm-level-card">
+        <h3>Assignments & Exam Preparation</h3>
+        Support for assignments, internal assessments, concept revision, and exam-focused preparation.
+        <p>
+        </p>
+      </div>
+
+      <div class="rm-level-card">
+        <h3>Drawing Classes</h3>
+        <p>
+        Learn drawing and sketching techniques with guided practice, creativity building, and step-by-step instruction for all levels.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ======================
+     STEP 8 — FAQ SECTION
+     ====================== -->
+<section class="rm-faq">
+
+  <div class="rm-faq-inner">
+
+    <div class="rm-faq-header">
+  <h2 style="font-size:36px;font-weight:700;color:#3A3DB8;text-align:center;margin-bottom:25px;">
+    Frequently Asked Questions
+  </h2>
+</div>
+
+    <div class="rm-faq-list">
+
+      <!-- FAQ 1 -->
+      <details class="rm-faq-item">
+        <summary>Who can join Revival Mastery classes?</summary>
+        <p>
+          Our classes are suitable for school students, college students, working professionals, and anyone looking to improve academics, language skills, or communication abilities.
+
+        </p>
+      </details>
+
+      <!-- FAQ 2 -->
+      <details class="rm-faq-item">
+        <summary>Do you provide a free demo class?</summary>
+        <p>
+          Yes. We provide a free demo class so you can understand our teaching
+          style, course structure, and interaction before enrolling.
+        </p>
+      </details>
+
+      <!-- FAQ 3 -->
+      <details class="rm-faq-item">
+        <summary>Are the classes online or offline?</summary>
+        <p>
+          We provide both online classes and home tuition, allowing students from anywhere in India or abroad to learn comfortably.
+
+        </p>
+      </details>
+
+      <!-- FAQ 4 -->
+      <details class="rm-faq-item">
+        <summary>What learning support and courses do you provide?</summary>
+        <p>
+          We provide complete learning support including language classes, public speaking training, school and college subjects, assignments, project work, exam preparation, and home tuition.
+
+        </p>
+      </details>
+
+      <!-- FAQ 5 -->
+<details class="rm-faq-item">
+  <summary>How long does it take to complete a course?</summary>
+  <p>
+    The course duration depends on the subject, student level, and learning goals.
+    Timelines vary for language classes, academics, public speaking, and project support,
+    and are planned based on individual needs.
+  </p>
+</details>
+
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ======================
+     STEP 9 — FOOTER
+     ====================== -->
+<footer class="rm-footer">
+
+  <div class="rm-footer-inner">
+
+    <!-- BRAND -->
+<div class="rm-footer-brand">
+  <h3>Revival Mastery</h3>
+  <p>
+    We guide school students, college students, and professionals through expert
+    language classes, public speaking training, academic coaching, project support,
+    and home tuition to help them learn with confidence and succeed.
+  </p>
+</div>
+
+
+    <!-- QUICK INFO -->
+<div class="rm-footer-links">
+  <h4>Why Choose Us</h4>
+  <ul>
+    <li>Expert Language & Academic Coaching</li>
+    <li>Online Classes & Home Tuition</li>
+    <li>School, College & Skill-Based Learning</li>
+    <li>Assignments, Projects & Exam Support</li>
+    <li>Free Demo Session</li>
+  </ul>
+</div>
+
+
+    <!-- CONTACT -->
+    <div class="rm-footer-contact">
+      <h4>Get In Touch</h4>
+      <p>
+        <a href="mailto:info@revivalmastery.com">
+          info@revivalmastery.com
+        </a>
+      </p>
+
+      <div class="rm-footer-socials">
+  <a href="https://www.youtube.com/watch?v=tGUm6J2xq9U" target="_blank" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+  <a href="https://www.instagram.com/revivalmastery" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/company/revival-mastery/" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+
+
+    </div>
+
+  </div>
+
+  <div class="rm-footer-bottom">
+    © <strong>Revival Mastery</strong>. All Rights Reserved.
+  </div>
+
+</footer>
+
+<!-- intl-tel-input JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.2/js/intlTelInput.min.js"></script>
+<script>
+/* ======================
+   BOOK DEMO — PHONE + GOOGLE SHEETS
+   ====================== */
+
+const phoneInput = document.querySelector("#rm-phone");
+const phoneHidden = document.querySelector("#rm-phone-full");
+
+const iti = window.intlTelInput(phoneInput, {
+  initialCountry: "auto",
+  geoIpLookup: callback => {
+    fetch("https://ipapi.co/json/")
+      .then(res => res.json())
+      .then(data => callback(data.country_code))
+      .catch(() => callback("IN"));
+  },
+  separateDialCode: true,
+  utilsScript:
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.2/js/utils.js",
+});
+
+// Store full international number
+phoneInput.addEventListener("blur", () => {
+  if (iti.isValidNumber()) {
+    phoneHidden.value = iti.getNumber();
+  }
+});
+
+/* ======================
+   GOOGLE SHEETS SUBMIT
+   ====================== */
+
+const form = document.querySelector(".rm-form-body");
+
+form.addEventListener("submit", function (e) {
+  const emailInput = form.querySelector('input[type="email"]');
+if (!emailInput.checkValidity()) {
+  emailInput.style.border = "2px solid #ff4d4d";
+  emailInput.focus();
+  return;
+}
+
+  e.preventDefault();
+
+  if (!iti.isValidNumber()) {
+    phoneInput.style.border = "2px solid #ff4d4d";
+phoneInput.focus();
+return;
+
+    return;
+  }
+
+  phoneHidden.value = iti.getNumber();
+  const formData = new FormData(form);
+
+/* REVIVAL MASTERY — INSTANT BUTTON FEEDBACK */
+const submitBtn = form.querySelector("button");
+submitBtn.innerText = "Booked ✓";
+submitBtn.disabled = true;
+submitBtn.style.opacity = "0.85";
+submitBtn.style.transform = "scale(0.97)";
+submitBtn.style.transition = "all 0.15s ease";
+
+/* REVIVAL MASTERY — INSTANT CONFIRMATION */
+showSuccessPopup();
+
+
+  
+
+
+  fetch(
+    "https://script.google.com/macros/s/AKfycbzDlKGKzKeGFLXL86MNPhdZtFCqBcwXns_b1Y4zY8As-EOe4j7qYIQ8E7uwaEE9mOBWjQ/exec",
+    {
+      method: "POST",
+      body: formData,
+    }
+  )
+    .then(() => {
+      form.reset();
+      iti.setCountry("in");
+    })
+    .catch(() => {
+      alert("Something went wrong. Please try again.");
+    });
+});
+function showSuccessPopup() {
+  const popup = document.createElement("div");
+  popup.innerHTML = `
+    <div class="rm-popup-overlay">
+      <div class="rm-popup">
+        <div class="rm-popup-icon">✓</div>
+        <h3>Demo Booked!</h3>
+        <p>
+          Thank you for booking a free demo.<br>
+          Our <strong>Revival Mastery</strong> team will contact you shortly.
+        </p>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(popup);
+
+  setTimeout(() => {
+    popup.remove();
+  }, 1800);
+}
+
+
+</script>
+
+</body>
+</html>
