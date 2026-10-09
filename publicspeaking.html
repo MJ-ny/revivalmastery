@@ -207,6 +207,49 @@
   box-shadow: 0 18px 45px rgba(0,0,0,0.25);
 }
 
+
+/* WHITE SIDE ARROWS */
+.rm-reels-inner {
+  position: relative;
+}
+
+.rm-reels-controls {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.rm-reels-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eeeeF5;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #3A3DB8;
+  font-size: 22px;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 4px 14px rgba(40, 30, 90, 0.20);
+}
+
+.rm-reels-btn:hover {
+  transform: scale(1.05);
+}
+
+.rm-reels-hint {
+  display: none;
+}
+
 /* TABLET */
 @media (max-width: 991px) {
   .rm-levels-grid {
@@ -1108,36 +1151,11 @@ background: linear-gradient(
   color: #3A3DB8;
 }
 
-.rm-reels-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  margin-top: 18px;
-}
 
-.rm-reels-btn {
-  width: 46px;
-  height: 46px;
-  border: 0;
-  border-radius: 50%;
-  background: linear-gradient(
-    135deg, #9D3CB0, #C93AC8, #3A3DB8
-  );
-  color: #ffffff;
-  font-size: 22px;
-  cursor: pointer;
-  box-shadow: 0 6px 18px rgba(80, 40, 150, 0.22);
-}
 
-.rm-reels-btn:hover {
-  transform: translateY(-2px);
-}
 
-.rm-reels-hint {
-  color: #777777;
-  font-size: 13px;
-}
+
+
 
 /* TABLET */
 @media (max-width: 900px) {
@@ -1291,26 +1309,7 @@ who want to communicate with confidence, speak with clarity, and perform at thei
 
     </div>
 
-    <!-- SLIDER CONTROLS -->
-    <div class="rm-reels-controls">
-      <button
-        class="rm-reels-btn"
-        type="button"
-        id="rmReelsPrev"
-        aria-label="Previous reels">
-        &#8592;
-      </button>
-
-      <span class="rm-reels-hint">Swipe to explore</span>
-
-      <button
-        class="rm-reels-btn"
-        type="button"
-        id="rmReelsNext"
-        aria-label="Next reels">
-        &#8594;
-      </button>
-    </div>
+    
 
   </div>
 </section>
