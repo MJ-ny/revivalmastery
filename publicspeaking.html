@@ -213,18 +213,29 @@
   position: relative;
 }
 
+```css
 .rm-reels-controls {
   position: absolute;
   top: 55%;
-  left: 0;
-  right: 0;
+  left: 5px;
+  right: 5px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
+  z-index: 9999;
   pointer-events: none;
-  z-index: 10;
 }
+
+.rm-reels-btn {
+  display: flex !important;
+  width: 40px;
+  height: 40px;
+  background: #ffffff !important;
+  color: #3A3DB8 !important;
+  pointer-events: auto;
+}
+
 
 .rm-reels-btn {
   width: 44px;
