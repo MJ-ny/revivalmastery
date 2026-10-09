@@ -144,7 +144,7 @@
 }
 
   /* ======================
-   STEP 7 — GERMAN LEVELS
+   STEP 7 — COACHING PROGRAMS
    ====================== */
 
 .rm-levels {
@@ -202,7 +202,7 @@
   line-height: 1.7;
 }
 
-/* FEATURED (B1) */
+/* FEATURED COACHING PROGRAM */
 .rm-highlight {
   box-shadow: 0 18px 45px rgba(0,0,0,0.25);
 }
@@ -1022,6 +1022,178 @@ background: linear-gradient(
 }
 
 
+/* =========================================
+   REVIVAL MASTERY — FOUR REELS SLIDER
+========================================= */
+
+.rm-reels-section {
+  background: #ffffff;
+  padding: 65px 20px 75px;
+  overflow: hidden;
+}
+
+.rm-reels-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rm-reels-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.rm-reels-heading h2 {
+  font-size: 34px;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #3A3DB8;
+  margin: 0 0 12px;
+}
+
+.rm-reels-heading p {
+  color: #666666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.rm-reels-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 40px) / 3);
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 8px 3px 18px;
+}
+
+.rm-reels-track::-webkit-scrollbar {
+  display: none;
+}
+
+.rm-reel-card {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #eeeeF5;
+  box-shadow: 0 12px 35px rgba(40, 30, 90, 0.12);
+  scroll-snap-align: start;
+}
+
+
+.rm-reel-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #111111;
+  overflow: hidden;
+}
+
+
+.rm-reel-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.rm-reel-caption {
+  padding: 17px 12px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: #3A3DB8;
+}
+
+.rm-reels-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.rm-reels-btn {
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg, #9D3CB0, #C93AC8, #3A3DB8
+  );
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(80, 40, 150, 0.22);
+}
+
+.rm-reels-btn:hover {
+  transform: translateY(-2px);
+}
+
+.rm-reels-hint {
+  color: #777777;
+  font-size: 13px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .rm-reels-track {
+    grid-auto-columns: calc((100% - 20px) / 2);
+  }
+}
+
+/* MOBILE: ONE VERTICAL REEL AT A TIME */
+@media (max-width: 600px) {
+  .rm-reels-section {
+    padding: 42px 14px 48px;
+  }
+
+  .rm-reels-heading {
+    margin-bottom: 22px;
+  }
+
+  .rm-reels-heading h2 {
+    font-size: 27px;
+  }
+
+  .rm-reels-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .rm-reels-track {
+    grid-auto-columns: 100%;
+    gap: 14px;
+    padding: 5px 2px 14px;
+  }
+
+  .rm-reel-card {
+    border-radius: 18px;
+  }
+
+  .rm-reel-video {
+    aspect-ratio: 9 / 16;
+  }
+
+  .rm-reel-caption {
+    padding: 14px 10px;
+    font-size: 15px;
+  }
+
+  .rm-reels-controls {
+    margin-top: 12px;
+  }
+
+  .rm-reels-btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 </style>
 
 </head>
@@ -1058,6 +1230,94 @@ who want to communicate with confidence, speak with clarity, and perform at thei
     </div>
   </div>
 </section>
+
+<!-- REVIVAL MASTERY — FOUR YOUTUBE SHORTS -->
+<section class="rm-reels-section">
+  <div class="rm-reels-inner">
+
+    <div class="rm-reels-heading">
+      <h2>Explore Our Public Speaking & Communication Training</h2>
+      <p>Discover how we help you speak with confidence and impact.</p>
+    </div>
+
+    <div class="rm-reels-track" id="rmReelsTrack">
+
+      <!-- REEL 1 -->
+      <div class="rm-reel-card">
+        <div class="rm-reel-video">
+          <iframe
+            src="https://www.youtube.com/embed/vhC92PWboqM"
+            title="Revival Mastery - Speak with Confidence"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="rm-reel-caption">Speak with Confidence</div>
+      </div>
+
+      
+<!-- REEL 2 -->
+<div class="rm-reel-card">
+  <div class="rm-reel-video">
+    <iframe
+      src="https://www.youtube.com/embed/8CSX7duSLpE"
+      title="Revival Mastery - Master Public Speaking"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="rm-reel-caption">Master Public Speaking</div>
+</div>
+
+<!-- REEL 3 -->
+<div class="rm-reel-card">
+  <div class="rm-reel-video">
+    <iframe
+      src="https://www.youtube.com/embed/weXROb7av_w"
+      title="Revival Mastery - Improve Your Communication"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="rm-reel-caption">Improve Your Communication</div>
+</div>
+
+
+    </div>
+
+    <!-- SLIDER CONTROLS -->
+    <div class="rm-reels-controls">
+      <button
+        class="rm-reels-btn"
+        type="button"
+        id="rmReelsPrev"
+        aria-label="Previous reels">
+        &#8592;
+      </button>
+
+      <span class="rm-reels-hint">Swipe to explore</span>
+
+      <button
+        class="rm-reels-btn"
+        type="button"
+        id="rmReelsNext"
+        aria-label="Next reels">
+        &#8594;
+      </button>
+    </div>
+
+  </div>
+</section>
+<!-- END REVIVAL MASTERY REELS -->
+
+
+  
 
 <section class="rm-book">
   <div class="rm-book-inner">
@@ -1189,59 +1449,53 @@ who want to communicate with confidence, speak with clarity, and perform at thei
   <div class="rm-team-inner">
 
     <div class="rm-team-header">
-      <h2><h2>Meet Your Public Speaking & Communication Coaches</h2></h2>
+    <h2>Meet Your Public Speaking & Communication Coaches</h2>
     </div>
 
     <div class="rm-team-grid">
 
-      <!-- TEACHER 1 -->
-      <div class="rm-team-card">
-        <div class="rm-team-image">
-          <img src="img/online-german-language-trainer.png" alt="German Teacher">
-        </div>
-        <h4 class="rm-team-name">Lakshita Sachdeva</h4>
-        <p class="rm-team-role">German Language Trainer</p>
-      </div>
-
-      <!-- TEACHER 2 -->
-      <div class="rm-team-card">
-        <div class="rm-team-image">
-          <img src="img/online-german-classes-instructor.png" alt="German Teacher">
-        </div>
-        <h4 class="rm-team-name">Pragya Jain</h4>
-        <p class="rm-team-role">German Language Trainer</p>
-      </div>
-
-      <!-- TEACHER 3 -->
-      <div class="rm-team-card">
-        <div class="rm-team-image">
-          <img src="img/certified-german-language-teacher.png" alt="German Teacher">
-        </div>
-        <h4 class="rm-team-name">neelaxi Kohli</h4>
-        <p class="rm-team-role">German Language Trainer</p>
-      </div>
-
-      <!-- TEACHER 4 -->
-      <div class="rm-team-card">
-        <div class="rm-team-image">
-          <img src="img/german-speaking-coach-india.png" alt="German Teacher">
-        </div>
-        <h4 class="rm-team-name">mansi Harder</h4>
-        <p class="rm-team-role">German Language Trainer</p>
-      </div>
-
-      <!-- TEACHER 5 -->
-      <div class="rm-team-card">
-        <div class="rm-team-image">
-          <img src="img/goethe-german-exam-trainer.png" alt="German Teacher">
-        </div>
-        <h4 class="rm-team-name">sigrid Maria</h4>
-        <p class="rm-team-role">German Language Trainer</p>
-      </div>
-
-    </div>
-
+     <!-- TRAINER 1 -->
+<div class="rm-team-card">
+  <div class="rm-team-image">
+    <img src="img/public-speaking-coach-india.png"
+         alt="Public Speaking Coach in India - Garima Shrivastava">
   </div>
+  <h4 class="rm-team-name">Garima Shrivastava</h4>
+  <p class="rm-team-role">Public Speaking Coach</p>
+</div>
+
+<!-- TRAINER 2 -->
+<div class="rm-team-card">
+  <div class="rm-team-image">
+    <img src="img/corporate-public-speaking-trainer.png"
+         alt="Corporate Public Speaking Trainer - Pragya Gandhi">
+  </div>
+  <h4 class="rm-team-name">Pragya Gandhi</h4>
+  <p class="rm-team-role">Public Speaking Coach</p>
+</div>
+
+<!-- TRAINER 3 -->
+<div class="rm-team-card">
+  <div class="rm-team-image">
+    <img src="img/public-speaking-training-coach.png"
+         alt="Public Speaking Training Coach - Neelakshi Chavan">
+  </div>
+  <h4 class="rm-team-name">Neelakshi Chavan</h4>
+  <p class="rm-team-role">Public Speaking Coach</p>
+</div>
+<!-- TRAINER 4 -->
+<div class="rm-team-card">
+  <div class="rm-team-image">
+    <img src="img/executive-public-speaking-coach.png"
+         alt="Executive Public Speaking Coach - Sigrid Gallarde">
+  </div>
+  <h4 class="rm-team-name">Sigrid Gallarde</h4>
+  <p class="rm-team-role">Public Speaking Coach</p>
+</div>
+
+</div>
+
+</div>
 
 </section>
   
@@ -1540,6 +1794,37 @@ function showSuccessPopup() {
 }
 
 
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.getElementById("rmReelsTrack");
+  const next = document.getElementById("rmReelsNext");
+  const prev = document.getElementById("rmReelsPrev");
+
+  if (!track || !next || !prev) return;
+
+  function scrollReels(direction) {
+    const card = track.querySelector(".rm-reel-card");
+    if (!card) return;
+
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 20;
+    const distance = card.getBoundingClientRect().width + gap;
+
+    track.scrollBy({
+      left: direction * distance,
+      behavior: "smooth"
+    });
+  }
+
+  next.addEventListener("click", function () {
+    scrollReels(1);
+  });
+
+  prev.addEventListener("click", function () {
+    scrollReels(-1);
+  });
+});
 </script>
 
 </body>
