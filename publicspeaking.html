@@ -214,18 +214,30 @@
 }
 
 ```css
+```css
+.rm-reels-inner {
+  position: relative;
+}
+
 .rm-reels-controls {
   position: absolute;
-  top: 55%;
-  left: 5px;
-  right: 5px;
+  top: 50%;
+  left: 3px;
+  right: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
   z-index: 9999;
   pointer-events: none;
 }
+
+.rm-reels-btn {
+  pointer-events: auto;
+}
+```
 
 .rm-reels-btn {
   display: flex !important;
@@ -1811,6 +1823,7 @@ function showSuccessPopup() {
 
 </script>
 
+```html
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.getElementById("rmReelsTrack");
@@ -1820,16 +1833,28 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!track || !next || !prev) return;
 
   function scrollReels(direction) {
-    const card = track.querySelector(".rm-reel-card");
-    if (!card) return;
+    const cards = track.querySelectorAll(".rm-reel-card");
+    if (!cards.length) return;
 
-    const gap = parseFloat(getComputedStyle(track).columnGap) || 20;
-    const distance = card.getBoundingClientRect().width + gap;
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    const distance = cards[0].getBoundingClientRect().width + gap;
+    const maxScroll = track.scrollWidth - track.clientWidth;
 
-    track.scrollBy({
-      left: direction * distance,
-      behavior: "smooth"
-    });
+    if (direction === 1) {
+      if (track.scrollLeft >= maxScroll - 5) {
+        track.scrollTo({ left: 0, behavior: "smooth" });
+      } else if (track.scrollLeft + distance >= maxScroll - 5) {
+        track.scrollTo({ left: maxScroll, behavior: "smooth" });
+      } else {
+        track.scrollBy({ left: distance, behavior: "smooth" });
+      }
+    } else {
+      if (track.scrollLeft <= 5) {
+        track.scrollTo({ left: maxScroll, behavior: "smooth" });
+      } else {
+        track.scrollBy({ left: -distance, behavior: "smooth" });
+      }
+    }
   }
 
   next.addEventListener("click", function () {
@@ -1841,6 +1866,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
-
+```
 </body>
 </html>
