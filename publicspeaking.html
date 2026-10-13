@@ -826,13 +826,20 @@ background: linear-gradient(
   list-style: none !important;
 }
 
-/* ================================
+```css
+/* ==================================================
    STEP 5 — TESTIMONIALS
-================================ */
+   GOOGLE REVIEW IMAGES — LARGE & RESPONSIVE
+   Desktop: 2 columns | Tablet: 2 columns | Mobile: Slider
+================================================== */
 
 .testimonials-section {
-  background: linear-gradient(135deg, var(--rm-purple), var(--rm-pink));
-  padding: 30px 16px;
+  background: linear-gradient(
+    135deg,
+    var(--rm-purple),
+    var(--rm-pink)
+  );
+  padding: 40px 20px;
 }
 
 .testimonials-container {
@@ -840,69 +847,97 @@ background: linear-gradient(
   margin: 0 auto;
   background: #ffffff;
   border-radius: 26px;
-  padding: 35px 30px;
+  padding: 38px 32px;
+  box-sizing: border-box;
 }
 
 .testimonials-heading {
   text-align: center;
-  font-size: 34px;
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.3;
   font-weight: 800;
   color: #9D3CB0;
-  margin-bottom: 35px;
+  margin: 0 0 36px;
 }
 
-/* REVIEW GRID */
+/* DESKTOP — 2 LARGE REVIEW IMAGES PER ROW */
+
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 35px 30px;
+  gap: 36px 30px;
   align-items: start;
 }
 
 .testimonial-card {
+  min-width: 0;
   width: 100%;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .testimonial-image {
   display: block;
   width: 100%;
   height: auto;
+  max-width: 100%;
+  object-fit: contain;
   border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
 }
 
 .testimonial-rating {
-  margin-top: 10px;
+  margin: 12px 0 0;
   font-size: 16px;
+  line-height: 1.5;
   font-weight: 700;
   color: var(--rm-purple);
 }
 
-/* MOBILE — REVIEW SLIDER */
+/* TABLET — 2 COLUMNS WITH COMFORTABLE SPACING */
 
-@media (max-width: 768px) {
-
+@media (min-width: 769px) and (max-width: 1024px) {
   .testimonials-section {
-    padding: 20px 12px;
+    padding: 30px 16px;
   }
 
   .testimonials-container {
-    padding: 25px 14px;
+    padding: 30px 22px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+}
+
+/* MOBILE — ONE LARGE REVIEW AT A TIME */
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 24px 12px;
+  }
+
+  .testimonials-container {
+    padding: 28px 0 24px;
     border-radius: 20px;
+    overflow: hidden;
   }
 
   .testimonials-heading {
-    font-size: 27px;
-    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 1.3;
+    margin: 0 16px 26px;
   }
 
   .testimonials-grid {
     display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
     overflow-x: auto;
     overflow-y: hidden;
-    gap: 16px;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
@@ -913,16 +948,28 @@ background: linear-gradient(
 
   .testimonial-card {
     flex: 0 0 100%;
-    min-width: 0;
     width: 100%;
+    min-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
     scroll-snap-align: start;
+  }
+
+  .testimonial-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
   }
 
   .testimonial-rating {
     font-size: 15px;
+    margin-top: 12px;
   }
-
 }
+
+/* ===== END STEP 5 — TESTIMONIALS ===== */
+```
 /* ================================
    STEP 8 — FAQ (GRADIENT FINAL)
 ================================ */
