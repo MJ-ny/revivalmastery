@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Try free speaking practice with Revival Mastery. Practise public speaking, review your words and explore personalised coaching.">
+<title>Speaking Studio | Revival Mastery</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#21164b;--purple:#8738c8;--pink:#c93ac8;--blue:#4038b8;--muted:#655c78;--line:#e8dff0;--soft:#faf6ff;--gradient:linear-gradient(115deg,#8738c8,#c93ac8 56%,#4038b8)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;background:#fff}a{color:inherit}.wrap{width:min(1080px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(14px);border-bottom:1px solid #eee7f5}.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:850;letter-spacing:-.03em}.brand img{width:40px;height:40px;object-fit:contain}.navlinks{display:flex;align-items:center;gap:22px}.navlinks a{text-decoration:none;font-size:.93rem;font-weight:700}.navlinks a:not(.button):hover{color:var(--purple)}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:12px;border:1px solid transparent;font:inherit;font-weight:800;text-decoration:none;cursor:pointer;transition:transform .18s,box-shadow .18s}.button:hover{transform:translateY(-2px)}.primary{color:#fff;background:var(--gradient);box-shadow:0 8px 20px #6730a326}.secondary{background:#fff;border-color:#d9c8e9;color:var(--ink)}.small{padding:9px 14px;font-size:.9rem}
+.hero{padding:68px 0 58px;background:radial-gradient(ellipse at 84% 12%,#f0dffb 0,transparent 30%),radial-gradient(ellipse at 6% 100%,#fbe7f5 0,transparent 30%),#fcfaff}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}.eyebrow{display:inline-block;color:#85359f;background:#f1e4f8;border-radius:99px;padding:6px 12px;font-size:.78rem;letter-spacing:.07em;font-weight:850}.hero h1{font-size:clamp(2.5rem,5vw,4.4rem);letter-spacing:-.06em;line-height:1.04;margin:18px 0}.gradient-text{color:#963bb2}.lead{font-size:1.08rem;color:#5f5672;max-width:560px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0 12px}.note{font-size:.84rem;color:#776d88}
+.demo-card{background:#fff;border:1px solid #eee3f7;border-radius:24px;padding:24px;box-shadow:0 22px 60px #43216d13}.demo-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.pill{font-size:.76rem;font-weight:800;color:#27734d;background:#e9f8ef;border-radius:99px;padding:5px 9px}.sample-score{display:flex;align-items:center;gap:17px;padding:15px;border-radius:17px;background:linear-gradient(135deg,#fbf6ff,#fff7fc);margin-bottom:16px}.score-ring{flex:0 0 82px;width:82px;height:82px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#9d48bf 0 78%,#e9dff2 78%);position:relative}.score-ring:before{content:"";position:absolute;inset:7px;background:#fff;border-radius:50%}.score-ring strong{position:relative;font-size:1.35rem}.sample-score p{font-size:.86rem;color:var(--muted);margin:3px 0}.sample-score b{font-size:1rem}.metric{margin:13px 0}.metric-label{display:flex;justify-content:space-between;gap:12px;font-size:.86rem;font-weight:750}.track{height:7px;background:#eee8f4;border-radius:99px;margin-top:7px;overflow:hidden}.track span{display:block;height:100%;border-radius:99px;background:var(--gradient)}.tiny{font-size:.76rem;color:#82788f;margin:14px 0 0}
+section{padding:58px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 28px}.section-head h2{font-size:clamp(1.8rem,3vw,2.6rem);letter-spacing:-.045em;line-height:1.15;margin:10px 0}.section-head p{color:var(--muted);margin:0}.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.how-card{padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff}.how-icon{width:43px;height:43px;display:grid;place-items:center;background:#f2e6fb;border-radius:13px;font-size:1.25rem}.how-card h3{margin:13px 0 5px}.how-card p{color:var(--muted);font-size:.92rem;margin:0}.practice{background:linear-gradient(180deg,#fbf7ff,#fff)}.practice-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px;align-items:start}.panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:23px;box-shadow:0 12px 34px #45236d0b}.panel h3{margin:0 0 5px}.panel .note{margin-top:0}label{display:block;font-weight:800;font-size:.9rem;margin:15px 0 7px}select,textarea{width:100%;border:1px solid #dcd0e7;border-radius:12px;padding:12px 13px;font:inherit;color:var(--ink);background:#fff}textarea{min-height:180px;resize:vertical}select:focus,textarea:focus{outline:3px solid #e8d7f6;border-color:#9c54c1}.status{font-size:.84rem;color:var(--muted);padding:10px 12px;background:#faf7fc;border-radius:10px;margin:13px 0}.status.success{color:#23734c;background:#ecf9f1}.status.error{color:#a33b42;background:#fff0f1}.control-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px}.control-row .button{flex:1}.button:disabled{opacity:.5;cursor:not-allowed;transform:none}.results{margin-top:18px}.hidden{display:none!important}.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:16px 0}.stat{padding:13px 8px;text-align:center;background:#f8f3fc;border-radius:12px}.stat strong{display:block;font-size:1.4rem}.stat span{font-size:.78rem;color:var(--muted)}.feedback-list{padding-left:20px;color:#5f5672;font-size:.9rem}.feedback-list li{margin:7px 0}
+.faq{background:#fff}.faq-list{max-width:800px;margin:auto;display:grid;gap:10px}.faq-item{border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}.faq-item summary{list-style:none;cursor:pointer;padding:17px 48px 17px 18px;font-weight:800;position:relative}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:1.35rem;color:var(--purple)}.faq-item[open] summary:after{content:"−"}.faq-item p{margin:0;padding:0 18px 18px;color:var(--muted);font-size:.92rem}
+.final-cta{padding:42px 0;background:linear-gradient(115deg,#f5e8ff,#fff1fa);text-align:center}.final-cta h2{font-size:clamp(1.8rem,3vw,2.5rem);margin:8px 0}.final-cta p{color:var(--muted);margin:0 auto 20px;max-width:620px}
+footer{background:#2d1b53;color:#fff;padding:38px 0 18px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footer-brand{display:flex;align-items:center;gap:10px;font-weight:850}.footer-brand img{width:42px;height:42px;object-fit:contain}.footer-copy{color:#e6dff0;font-size:.88rem;max-width:360px}.footer-links{display:grid;gap:8px}.footer-links a,footer a{color:#fff;text-decoration:none;font-size:.9rem}.footer-links a:hover,footer a:hover{text-decoration:underline}.footer-bottom{border-top:1px solid #ffffff30;margin-top:25px;padding-top:15px;text-align:center;font-size:.8rem;color:#e6dff0}
+@media(max-width:780px){.hero{padding:48px 0}.hero-grid,.practice-grid{grid-template-columns:1fr;gap:25px}.how-grid{grid-template-columns:1fr}.nav{height:auto;min-height:66px;flex-wrap:wrap;padding:10px 0}.navlinks{gap:12px}.navlinks .optional{display:none}.footer-grid{grid-template-columns:1fr;gap:22px}.demo-card{max-width:560px;width:100%;margin:auto}}
+@media(max-width:440px){.navlinks{gap:8px}.navlinks .small{padding:8px 10px;font-size:.8rem}.brand{font-size:.95rem}.brand img{width:34px;height:34px}.hero h1{font-size:2.55rem}.actions{display:grid}.actions .button{width:100%}.panel{padding:17px}.control-row{display:grid}.result-grid{gap:6px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* REVIVAL MASTERY — GRADIENT HEADER + 3D BUTTON */
+
+header {
+  background: linear-gradient(
+    110deg,
+    #a43bb5 0%,
+    #c43dc5 48%,
+    #4938bd 100%
+  ) !important;
+  border-bottom: none !important;
+}
+
+/* BRAND LOGO AND NAME */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff !important;
+  font-size: 24px;
+  font-weight: 850;
+  letter-spacing: -0.045em;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* NAVIGATION LINKS */
+
+.navlinks a:not(.button) {
+  color: #ffffff !important;
+  font-weight: 750;
+  transition: opacity 0.2s ease;
+}
+
+.navlinks a:not(.button):hover {
+  color: #ffffff !important;
+  opacity: 0.8;
+}
+
+/* BOOK FREE DEMO — 3D GRADIENT BUTTON */
+
+.navlinks .button.primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background: linear-gradient(
+    135deg,
+    #d44be0 0%,
+    #a52bd0 45%,
+    #5735c7 100%
+  ) !important;
+
+  color: #ffffff !important;
+  border: 2px solid rgba(255, 255, 255, 0.8) !important;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 850;
+  text-decoration: none;
+
+  box-shadow:
+    0 5px 0 #39218f,
+    0 9px 20px rgba(30, 12, 76, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+  text-shadow: 0 1px 2px rgba(40, 10, 65, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+/* HOVER EFFECT */
+
+.navlinks .button.primary:hover {
+  color: #ffffff !important;
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 0 #39218f,
+    0 13px 25px rgba(30, 12, 76, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+/* CLICK EFFECT */
+
+.navlinks .button.primary:active {
+  transform: translateY(3px);
+
+  box-shadow:
+    0 2px 0 #39218f,
+    0 4px 10px rgba(30, 12, 76, 0.25);
+}
+
+/* MOBILE FRIENDLY */
+
+@media (max-width: 440px) {
+  .brand {
+    font-size: 19px;
+  }
+
+  .brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .navlinks .button.primary {
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+}
+.brand {
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  text-shadow: none !important;
+}
+
+/* Same rounded font throughout the header */
+.brand,
+.navlinks a {
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+/* Revival Mastery logo — clean, flat appearance */
+.brand img {
+  filter: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  -webkit-filter: none !important;
+  border: none !important;
+}
+
+/* Revival Mastery — Global Font */
+html,
+body,
+body * {
+  font-family: 'Nunito', sans-serif !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+button, input, select, textarea {
+  font-family: 'Nunito', sans-serif !important;
+}
+
+button {
+  font-weight: 800;
+}
+
+/* Revival Mastery — Match Original Website Footer */
+footer {
+  background: linear-gradient(
+    110deg,
+    #b83fbd 0%,
+    #c13fc2 45%,
+    #4b38bd 100%
+  ) !important;
+  color: #ffffff !important;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer p,
+footer a,
+footer span,
+footer li,
+footer div {
+  color: #ffffff !important;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  opacity: 0.85;
+}
+
+/* FIX: FAQ answers getting cut off */
+.faq-list {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.faq-item {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.faq-item[open] {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.faq-item > p {
+  display: block !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  line-height: 1.7 !important;
+  margin: 12px 18px 18px !important;
+  padding: 0 !important;
+  position: static !important;
+}
+
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="https://www.revivalmastery.com/publicspeaking" aria-label="Revival Mastery home">
+      <img src="/img/newlogo.png" alt="Revival Mastery logo"><span>Revival Mastery</span>
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a class="optional" href="#how">How it works</a>
+      <a href="#practice">Practice</a>
+      <a class="button primary small" href="https://www.revivalmastery.com/publicspeaking">Book Free Demo ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">REVIVAL MASTERY · SPEAKING STUDIO</span>
+        <h1>Speak clearly.<br><span class="gradient-text">Feel more confident.</span></h1>
+        <p class="lead">A simple place to practise public speaking, presentations and everyday communication. Choose a topic, speak for a moment, and review your words.</p>
+        <div class="actions">
+          <a class="button primary" href="#practice">🎙 Start free practice</a>
+          <a class="button secondary" href="https://www.revivalmastery.com/publicspeaking">Explore programmes ↗</a>
+        </div>
+        <p class="note">Free to try · No account needed for this first version</p>
+      </div>
+      <aside class="demo-card" aria-label="Illustration of speaking feedback">
+        <div class="demo-top"><strong>Your practice preview</strong><span class="pill">Example</span></div>
+        <div class="sample-score"><div class="score-ring"><strong>78</strong></div><div><b>Your words, made clearer</b><p>Review your pace and common filler words after practice.</p></div></div>
+        <div class="metric"><div class="metric-label"><span>Speaking pace</span><span>Practice measure</span></div><div class="track"><span style="width:76%"></span></div></div>
+        <div class="metric"><div class="metric-label"><span>Filler words</span><span>Transcript check</span></div><div class="track"><span style="width:38%"></span></div></div>
+        <p class="tiny">Illustration only — this is not a real score. Your measurements appear after you review your own speech.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">A SIMPLE WAY TO START</span><h2>Practise. Review. Try again.</h2><p>You don't need to sound perfect. Start with one idea and build your confidence step by step.</p></div>
+      <div class="how-grid">
+        <article class="how-card"><div class="how-icon">🎯</div><h3>Pick a topic</h3><p>Choose a topic for everyday speaking, a presentation or an interview.</p></article>
+        <article class="how-card"><div class="how-icon">🎙️</div><h3>Speak naturally</h3><p>Use your microphone if supported, or type your speech into the text box.</p></article>
+        <article class="how-card"><div class="how-icon">🌱</div><h3>Find your next step</h3><p>Review basic measurements and choose one small thing to improve.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="practice" id="practice">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">YOUR FREE PRACTICE</span><h2>Ready when you are.</h2><p>Choose what you want to practise. Take a breath, then begin.</p></div>
+      <div class="practice-grid">
+        <div class="panel">
+          <h3>1. Choose a topic</h3><p class="note">Pick one that feels useful today.</p>
+          <label for="topic">What would you like to practise?</label>
+          <select id="topic">
+            <option value="Introduce yourself">Introduce yourself</option>
+            <option value="A one-minute presentation">A short presentation</option>
+            <option value="Why communication matters">Why communication matters</option>
+            <option value="A job interview answer">A job interview answer</option>
+            <option value="Tell a short story">Tell a short story</option>
+            <option value="My favourite hobby">Talk about your favourite hobby</option>
+          </select>
+          <div class="status" id="supportStatus" role="status">Checking browser microphone support…</div>
+          <div class="control-row"><button class="button primary" id="startBtn" type="button">🎙 Start speaking</button><button class="button secondary" id="stopBtn" type="button" disabled>Stop</button></div>
+          <p class="note">Your browser may ask for microphone permission. Live speech recognition depends on your browser and device.</p>
+          <p class="note">This demo allows up to 3 practice starts per day in this browser. This is a basic limit, not a secure account-based limit.</p>
+        </div>
+        <div class="panel">
+          <h3>2. Review your speech</h3><p class="note">Edit your transcript if needed, then select Review my speech.</p>
+          <label for="transcript">Your transcript</label>
+          <textarea id="transcript" placeholder="Your recognised words appear here. Or type/paste your speech…"></textarea>
+          <div class="control-row"><button class="button primary" id="analyseBtn" type="button">Review my speech</button><button class="button secondary" id="clearBtn" type="button">Clear</button></div>
+          <div id="results" class="results hidden" aria-live="polite">
+            <div class="result-grid"><div class="stat"><strong id="wordCount">0</strong><span>Words</span></div><div class="stat"><strong id="wpm">0</strong><span>Words/min</span></div><div class="stat"><strong id="fillers">0</strong><span>Filler words</span></div></div>
+            <h3>Your next steps</h3><ul class="feedback-list" id="feedback"></ul>
+            <p class="note">This is basic transcript analysis, not a full AI assessment of pronunciation, voice tone or body language.</p>
+            <a class="button primary" href="https://www.revivalmastery.com/publicspeaking">Explore coaching & book a demo ↗</a>
+          </div>
+          <div id="analysisStatus" class="status" role="status">Your review will appear here.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">GOOD TO KNOW</span><h2>Questions, answered.</h2><p>A few quick details before you begin.</p></div>
+      <div class="faq-list">
+        <details class="faq-item"><summary>Is the practice tool free?</summary><p>Yes, this first version is free to try, with a small daily practice limit in the same browser.</p></details>
+        <details class="faq-item"><summary>Is this a full AI speaking coach?</summary><p>Not yet. This first version checks the transcript for word count, estimated pace and common filler words. It does not yet assess pronunciation, vocal tone or body language using AI.</p></details>
+        <details class="faq-item"><summary>What if my microphone does not work?</summary><p>Allow microphone access and use a supported browser. You can also type or paste your speech into the transcript box and review it.</p></details>
+        <details class="faq-item"><summary>Can I get personal coaching too?</summary><p>Yes. Explore Revival Mastery's programmes and book a free demo through our main website.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap"><span class="eyebrow">TAKE THE NEXT STEP</span><h2>Want personal guidance?</h2><p>Practise here for free, then visit Revival Mastery to explore our coaching and book a free demo.</p><a class="button primary" href="https://www.revivalmastery.com/publicspeaking">Explore programmes & book free demo ↗</a></div>
+  </section>
+</main>
+<footer>
+  <div class="wrap footer-grid">
+    <div><div class="footer-brand"><img src="/img/newlogo.png" alt="Revival Mastery logo"><span>Revival Mastery</span></div><p class="footer-copy">Helping learners and professionals build confidence through public speaking, communication and presentation coaching.</p></div>
+    <div><h3>Explore</h3><div class="footer-links"><a href="https://www.revivalmastery.com/publicspeaking">Public Speaking</a><a href="https://www.revivalmastery.com/publicspeaking">Communication Skills</a><a href="https://www.revivalmastery.com/publicspeaking">Presentation Coaching</a></div></div>
+    <div><h3>Get started</h3><div class="footer-links"><a href="#practice">Try free practice</a><a href="https://www.revivalmastery.com/publicspeaking">Book a free demo</a><a href="https://www.revivalmastery.com/publicspeaking">Main website ↗</a></div></div>
+  </div>
+  <div class="wrap footer-bottom">© <span id="year"></span> Revival Mastery. All rights reserved.</div>
+</footer>
+<script>
+
+(() => {
+  const $ = id => document.getElementById(id);
+  $('year').textContent = new Date().getFullYear();
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const supportStatus = $('supportStatus');
+  const startBtn = $('startBtn'), stopBtn = $('stopBtn');
+  let recognition = null, startedAt = 0, elapsedSeconds = 0, isListening = false;
+  const LIMIT = 3;
+  const localDate = new Date(); const todayKey = 'rmCoachAttempts-' + localDate.getFullYear() + '-' + String(localDate.getMonth()+1).padStart(2,'0') + '-' + String(localDate.getDate()).padStart(2,'0');
+  const getAttempts = () => Number(localStorage.getItem(todayKey) || 0);
+  const setStatus = (el, msg, type='') => { el.textContent = msg; el.className = 'status' + (type ? ' ' + type : ''); };
+  const updateLimit = () => {
+    const remaining = Math.max(0, LIMIT - getAttempts());
+    startBtn.disabled = !SpeechRecognition || remaining <= 0 || isListening;
+    supportStatus.textContent = !SpeechRecognition
+      ? 'Live speech recognition is not supported in this browser. You can still type your speech below and review it.'
+      : remaining > 0 ? `Speech recognition is available. ${remaining} of ${LIMIT} practice starts left today in this browser.`
+      : 'You have used the 3 practice starts allowed today in this browser. You can still type and review text.';
+  };
+  updateLimit();
+
+  document.querySelectorAll('[data-topic]').forEach(card => {
+    card.addEventListener('click', () => {
+      $('topic').value = card.dataset.topic;
+      $('practice').scrollIntoView({behavior:'smooth', block:'start'});
+      $('topic').focus({preventScroll:true});
+    });
+  });
+
+  if (SpeechRecognition) {
+    recognition = new SpeechRecognition();
+    recognition.lang = 'en-IN';
+    recognition.continuous = true;
+    recognition.interimResults = true;
+    recognition.onstart = () => {
+      isListening = true; startedAt = Date.now(); elapsedSeconds = 0;
+      startBtn.disabled = true; stopBtn.disabled = false;
+      setStatus(supportStatus, 'Listening… Speak naturally. Select Stop when you finish.', 'success');
+    };
+    recognition.onresult = event => {
+      let finalText = '', interim = '';
+      for (let i = 0; i < event.results.length; i++) {
+        const part = event.results[i][0].transcript;
+        if (event.results[i].isFinal) finalText += part + ' ';
+        else interim += part;
+      }
+      const existing = $('transcript').dataset.finalText || '';
+      // Rebuild from all current results to avoid repeating interim words.
+      let allFinal = '';
+      for (let i = 0; i < event.results.length; i++) if (event.results[i].isFinal) allFinal += event.results[i][0].transcript + ' ';
+      $('transcript').value = (allFinal + (interim ? interim : '')).trim();
+      $('transcript').dataset.finalText = allFinal;
+    };
+    recognition.onerror = event => {
+      setStatus(supportStatus, 'Speech recognition issue: ' + event.error + '. You can type your speech instead.', 'error');
+    };
+    recognition.onend = () => {
+      if (isListening) elapsedSeconds += Math.max(1, Math.round((Date.now() - startedAt) / 1000));
+      isListening = false; startBtn.disabled = getAttempts() >= LIMIT; stopBtn.disabled = true;
+      if (!supportStatus.classList.contains('error')) setStatus(supportStatus, 'Recording stopped. Review your transcript, then select “Review my speech”.', 'success');
+      updateLimit();
+    };
+  }
+
+  startBtn.addEventListener('click', () => {
+    if (!recognition || getAttempts() >= LIMIT) return;
+    localStorage.setItem(todayKey, String(getAttempts() + 1));
+    try { recognition.start(); } catch (e) { setStatus(supportStatus, 'Could not start speech recognition. Please try again or type your speech.', 'error'); }
+    updateLimit();
+  });
+  stopBtn.addEventListener('click', () => { if (recognition && isListening) recognition.stop(); });
+
+  $('analyseBtn').addEventListener('click', () => {
+    const text = $('transcript').value.trim();
+    if (!text) { setStatus($('analysisStatus'), 'Please speak or enter some text before reviewing.', 'error'); return; }
+    const words = text.match(/\b[\p{L}\p{N}'’-]+\b/gu) || [];
+    const wordCount = words.length;
+    const duration = elapsedSeconds || Math.max(30, Math.round(wordCount / 2.2)); // estimate for typed text
+    const wpm = Math.round(wordCount / (duration / 60));
+    const fillerMatches = text.match(/\b(um+|uh+|erm+|like|you know|basically|actually|so)\b/gi) || [];
+    const fillers = fillerMatches.length;
+    $('wordCount').textContent = wordCount;
+    $('wpm').textContent = wpm;
+    $('fillers').textContent = fillers;
+   
+const feedback = [];
+
+// 1. Speech structure and content
+if (wordCount < 30) {
+  feedback.push('🎯 SPEECH DEVELOPMENT: Your speech is quite short. Explain one main idea, give an example, and finish with a conclusion.');
+} else if (wordCount < 100) {
+  feedback.push('🎯 SPEECH STRUCTURE: Good start. Organise your speech with a clear opening, two main points, and a short conclusion.');
+} else {
+  feedback.push('👏 SPEECH STRUCTURE: You have enough content to practise organising your ideas. Make your opening engaging, explain your main points clearly, and finish with a strong conclusion.');
+}
+
+// 2. Speaking pace
+if (wpm < 100) {
+  feedback.push('⏱️ SPEAKING PACE: Your estimated pace is slow. Try speaking in complete phrases and connecting your ideas naturally.');
+} else if (wpm <= 160) {
+  feedback.push('⏱️ SPEAKING PACE: Your estimated pace is within a common presentation range. Keep your pronunciation clear and your pauses natural.');
+} else {
+  feedback.push('⏱️ SPEAKING PACE: Your estimated pace is fast. Slow down slightly, pause between important ideas, and articulate key words clearly.');
+}
+
+// 3. Filler words
+if (fillers > 3) {
+  feedback.push(`🗣️ FILLER WORDS: We detected ${fillers} possible filler words. Practise replacing unnecessary "um", "uh", and "you know" with comfortable pauses.`);
+} else {
+  feedback.push('🗣️ FILLER WORDS: Few common filler words were detected. Keep practising confident pauses instead of filling every silence.');
+}
+
+// 4. Repeated words
+const repeatedWords = words.filter((word, index) =>
+  index > 0 &&
+  word.toLowerCase() === words[index - 1].toLowerCase() &&
+  /^[a-z0-9]+$/i.test(word)
+);
+
+if (repeatedWords.length > 0) {
+  feedback.push('🔁 REPETITION: Some words appear consecutively more than once. Review your speech and remove accidental repetitions.');
+} else {
+  feedback.push('🔁 REPETITION: No consecutive repeated words were detected by this basic check.');
+}
+
+// 5. Basic grammar checks
+const grammarChecks = [
+  {
+    pattern: /\bI is\b/i,
+    advice: 'Use "I am" instead of "I is".'
+  },
+  {
+    pattern: /\b(he|she|it) are\b/i,
+    advice: 'Check subject-verb agreement. For example, use "She is" rather than "She are".'
+  },
+  {
+    pattern: /\b(he|she|it) have\b/i,
+    advice: 'Check subject-verb agreement. For example, use "He has" rather than "He have".'
+  },
+  {
+    pattern: /\b(he|she|it) don't\b/i,
+    advice: 'In standard English, use "does not" or "doesn’t" with he, she, or it.'
+  },
+  {
+    pattern: /\b(yesterday|last night|last week|last month)\b[^.!?]{0,60}\b(go|eat|buy|see|come|take|write|speak|do|make|have)\b/i,
+    advice: 'Check the past tense when describing completed events. For example, "Yesterday I went" instead of "Yesterday I go".'
+  },
+  {
+    pattern: /\b(more better|more easier|most easiest)\b/i,
+    advice: 'Check comparative forms. For example, use "better" instead of "more better".'
+  }
+];
+
+let grammarFlagged = false;
+
+for (const check of grammarChecks) {
+  if (check.pattern.test(text)) {
+    feedback.push('✍️ GRAMMAR: ' + check.advice);
+    grammarFlagged = true;
+  }
+}
+
+if (!grammarFlagged) {
+  feedback.push('✍️ GRAMMAR: These basic checks did not identify any of the specific errors they look for. Other grammar mistakes may still be present.');
+}
+
+// 6. Sentence clarity
+const sentences = text
+  .split(/[.!?]+/)
+  .filter(sentence => sentence.trim().length > 0);
+
+if (sentences.length >= 2) {
+  const averageWords = wordCount / sentences.length;
+
+  if (averageWords > 25) {
+    feedback.push('📖 SENTENCE CLARITY: Some sentences may be long. Divide complex ideas into shorter sentences to help your audience follow you.');
+  } else if (averageWords < 6) {
+    feedback.push('📖 SENTENCE CLARITY: Your sentences are short on average. Try connecting related ideas using words such as "because", "however", and "for example".');
+  } else {
+    feedback.push('📖 SENTENCE CLARITY: Your average sentence length looks manageable. Vary sentence lengths to make your speech more engaging.');
+  }
+} else if (wordCount >= 30) {
+  feedback.push('📖 SENTENCE CLARITY: Try using clear sentence breaks and pauses to separate your main ideas.');
+}
+
+// 7. Vocabulary and audience engagement
+if (wordCount >= 50) {
+  feedback.push('💡 AUDIENCE ENGAGEMENT: Make your message memorable by adding a real-life example, a short story, or a specific detail that supports your main point.');
+}
+
+// 8. Actionable next step
+feedback.push('🚀 YOUR NEXT STEP: Choose one suggestion, practise your speech again, and compare your next attempt. Focus on improving one skill at a time.');
+
+// Display feedback
+$('feedback').innerHTML = '';
+
+feedback.forEach(item => {
+  const li = document.createElement('li');
+  li.textContent = item;
+  $('feedback').appendChild(li);
+});
+
+$('results').classList.remove('hidden');
+
+setStatus(
+  $('analysisStatus'),
+  'Review complete. Feedback uses basic text-based checks and is not a professional assessment.',
+  'success'
+);
+});
+
+$('clearBtn').addEventListener('click', () => {
+  $('transcript').value = '';
+  $('transcript').dataset.finalText = '';
+  $('results').classList.add('hidden');
+  setStatus(
+    $('analysisStatus'),
+    'Cleared. Start a new practice or type a speech to review.'
+  );
+});
+
+})();
+
+</script>
+</body>
+</html>
